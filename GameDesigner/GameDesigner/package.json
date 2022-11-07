@@ -1,0 +1,16 @@
+{
+    "name": "com.gamedesigner.network",
+    "version": "2022.10.5",
+    "type": "module",
+    "displayName": "GameDesigner",
+    "description": "专为游戏而设计的前后端网络框架和动作状态机",
+    "dependencies": {
+
+    },
+	"samples":[
+    {
+      "displayName": "Example",
+      "description": "gdnet案例",
+      "path": "Example~"
+    }]
+}

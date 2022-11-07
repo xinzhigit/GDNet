@@ -1,0 +1,1 @@
+{"onReloadInvoke":false,"syncVarClientEnable":false,"syncVarServerEnable":false,"savePath":"E:/GitProjects/GDNet/Assets/Scripts/Helper/","dllPaths":["E:/GitProjects/GDNet/Assets/../Library/ScriptAssemblies/Assembly-CSharp.dll","E:/GitProjects/GDNet/Unity/Assets/../Library/ScriptAssemblies/Assembly-CSharp.dll"],"rpcConfig":[],"foldout":false,"rpcConfigSize":0}

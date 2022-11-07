@@ -1,0 +1,25 @@
+案例2使用:
+
+1. 打开Server~/Server.csproj项目文件, 并引用GameDesigner.dll(简称gdnet.dll) 请到gitee下载gdnet新版本后引用项目或dll
+
+2.有需要时, 可打开Hotfix~/Hotfix.csproj项目文件, 如果编译不成功, 则需要引用UnityEngine.UI.dll, Assembly-CSharp.dll, UnityEngine.CoreModule这3个dll才能生成热更新工程!
+
+Assembly-CSharp.dll和UnityEngine.UI.dll 可以到你当前的unity项目路径: Library\ScriptAssemblies\Assembly-CSharp.dll找到, 在Assets同目录中找到Library文件夹
+
+UnityEngine.CoreModule.dll需要到unity的安装路径下找到, 可以使用搜索
+
+3.进入BuildSetting窗口添加Login, Battle场景
+
+4.运行服务器
+
+5.打开Login场景, 运行即可
+
+6.如果服务器打开出错, 提示xxx.sceneData文件找不到, 则需要打开Battle场景, 然后找到unity扩展菜单GameDesigner/Example/Example2/SceneDataBuild进行生成场景数据文件!
+或者直接打开Server~/Server.csproj项目文件并在vs运行找到出错点, 根据出错内容解决问题!
+
+序列化重要提示: 序列化网络类型必须在主工程定义, 什么热更网络类型? 热更新时必须新下载主工程apk替换旧的, 由于主工程的apk大小也不是很大, 所以是可以这样更新的
+
+7.如果要编译exe, apk 必须设置GameInit组件的dllpath字段为StreamingAssets模式加载, 前面的路径都不需要, 只填: hotfix.dll 即可, 然后找到Hotfix.dll放到编译好的exe程序目录的StreamingAssets文件夹里面, 安卓的需要放到persistentDataPath路径
+
+8.服务器数据库采用了SQLite数据库, 方便新手直接下载gdnet项目后即可运行查看结果, 如果熟悉gdnet后, 你需要更换Mysql数据库, gdnet提供了一个生成SQLite, MySql的列表转类工具, 并且能自动与数据库更新
+工具地址:https://gitee.com/leng_yue/my-sql-data-build

@@ -1,0 +1,18 @@
+{
+    "name": "GameDesignerInUnity",
+    "rootNamespace": "",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [
+        "dnlib.dll",
+        "WebSocket4Net.dll",
+        "SuperSocket.ClientEngine.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -58,3 +58,7 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+/GameDesigner/obj/Debug
+/Server/.idea/.idea.Server.dir/.idea
+/Server/obj/Debug/net6.0
+/Server/obj
